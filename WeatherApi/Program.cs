@@ -4,7 +4,7 @@ using WeatherApi;
 using Microsoft.OpenApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
-builder.Environment.EnvironmentName = "Development"; // Force Development Mode
+//builder.Environment.EnvironmentName = "Development"; // Force Development Mode
 // Add services to the container.
 builder.Services.AddHttpClient<WeatherService>().AddStandardResilienceHandler();
 builder.Services.AddSingleton<WeatherService>();

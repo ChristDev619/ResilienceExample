@@ -16,7 +16,7 @@ public class WeatherService
 
     public async Task<WeatherResponse?> GetCurrentWeatherAsync(string city)
     {
-        var url = $"https://api.openweathermap.org/data/2.5/weather?q={city}&appid=661a1bcf2fae84fe5e5298071369b64c&units=metric";
+        var url = $"https://api.openweathermap.org/data/2.5/weather?q={city}&appid=8dad3db309e50de33c8cdefbe69cec74&units=metric";
 
         var weatherResponse = await _httpClient.GetAsync(url);
         
